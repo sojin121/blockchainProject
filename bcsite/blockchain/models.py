@@ -7,7 +7,7 @@ class File(models.Model):
 
     file_no = models.IntegerField()
     file_name = models.CharField(max_length=200)
-    file_content = models.CharField(max_length=400)
+    file_content = models.TextField(max_length=400)
     file_path = models.CharField(max_length=200)
     upload_date = models.DateTimeField(null=True, blank=True)
 
